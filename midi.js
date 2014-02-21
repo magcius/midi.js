@@ -1,5 +1,7 @@
 (function(exports) {
 
+    var AudioContext = (window.AudioContext || window.webkitAudioContext);
+
     function makeStream(buffer) {
         var stream = new DataView(buffer);
         stream.length = buffer.byteLength;
